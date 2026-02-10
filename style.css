@@ -1,12 +1,16 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(135deg, #000000, #0f1a2b, #000000);
   font-family: 'Press Start 2P', cursive;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  background-image: url("background.PNG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
