@@ -11,7 +11,9 @@ loveBtn.addEventListener("click", () => {
 presentBtn.addEventListener("click", () => {
   lovePopup.style.display = "none";
   presentPopup.style.display = "flex";
+  launchConfetti();
 });
+
 
 closeBtn.addEventListener("click", () => {
   presentPopup.style.display = "none";
