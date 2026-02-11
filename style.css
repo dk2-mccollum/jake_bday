@@ -7,10 +7,11 @@ body {
   justify-content: center;
   overflow: hidden;
 
-  background: url("background.png") no-repeat center center fixed;
+  background: url("background.png") no-repeat center center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 
@@ -20,7 +21,7 @@ body {
     padding: 6px 10px;
     display: flex;
     justify-content: space-between;
-    font-size: 10px;
+    font-size: clamp(9px, 2.5vw, 12px);
     border-bottom: 3px solid #000;
 }
 
@@ -47,7 +48,7 @@ h1 {
 }
 
 .message {
-  font-size: 10px;
+  font-size: clamp(9px, 2.5vw, 12px);
   line-height: 1.8;
   margin-bottom: 30px;
   color: #111;
@@ -129,7 +130,7 @@ button:hover {
 }
 
 .popup-box p {
-  font-size: 11px;
+  font-size: clamp(9px, 2.5vw, 12px);
   line-height: 1.8;
   color: #111;
 }
@@ -188,4 +189,33 @@ button:hover {
     opacity: 0;
   }
 }
+
+@media (max-width: 600px) {
+
+  .window {
+    width: 92%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: clamp(9px, 2.5vw, 12px);
+    line-height: 1.6;
+  }
+
+  .message {
+    font-size: clamp(9px, 2.5vw, 12px);
+  }
+
+  button {
+    font-size: clamp(9px, 2.5vw, 12px);
+    padding: 10px 14px;
+  }
+
+  .popup-box {
+    width: 85%;
+    padding: 20px;
+  }
+
+}
+
 
